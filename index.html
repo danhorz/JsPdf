@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de PDF</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluye jsPDF desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <!-- Incluye html2canvas desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="pdf-content">
+        <h2>Información para el PDF</h2>
+
+        <!-- nombre -->
+        <label for="name">Nombre de la persona o empresa:</label>
+        <input type="text" id="nombrePersonaEmpresa" placeholder="Nombre de persona o empresa">
+
+        <!-- Dni o ruc -->
+        <label for="name">Ruc o DNI:</label>
+        <label for="identificación">Selecciona tipo de identificación:</label>
+        <select id="identificaciónRucDni">
+            <option value="DNI">DNI</option>
+            <option value="arequipa">RUC</option>
+        </select>
+        <input type="text" id="dniRuc" placeholder="Ingrese identificacion">
+
+        <!-- Detalle -->
+        <label for="Detalle">Detalle o descripción:</label>
+        <textarea id="descripcion-o-detalle"></textarea>
+
+        <!-- Monto -->
+        <label for="Detalle">Monto:</label>
+        <input type="text" id="monto" placeholder="Ingrese el monto">
+
+    </div>
+
+    <button onclick="generatePDF()">Generar PDF</button>
+
+    <!-- COntenedor pdf -->
+    <!-- flex vertical gap 10 -->
+    <div id="contendor-boleta">
+        <!-- ruc -->
+        <!-- agregar P+ Nombre -->
+        <!-- AGUEGAR consumo -->
+        <!--MOnto-->
+
+    </div>
+
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
